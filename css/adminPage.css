@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh; /* Mengatur tinggi body agar 100% dari viewport */
+}
+
+.container {
+    display: flex;
+    height: 100%; /* Mengatur tinggi container agar 100% dari body */
+}
+
+.sidebar {
+    background-color: hsl(0, 0%, 13%);
+    color: white;
+    width: 250px;
+    padding: 20px;
+    height: 100%; /* Mengatur tinggi sidebar agar 100% */
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar .button {
+    display: block;
+    background-color: #ffffff;
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.sidebar .button:hover {
+    background-color: #fff6a7;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+
+}
+
+
+h1{
+font-family: 'Rubik',sans-serif;
+
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: hsl(207, 100%, 86%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content-section {
+    margin-top: 20px;
+}
+
+.recipe-form {
+    display: grid;
+    grid-template-columns: 1fr; /* Satu kolom */
+    gap: 15px; /* Jarak antar elemen */
+    max-width: 600px; /* Lebar maksimum form */
+    margin: 0 auto; /* Centering form */
+    background-color: rgb(252, 230, 191); /* Warna latar belakang form */
+    padding: 20px; /* Padding dalam form */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Menyusun label dan input dalam kolom */
+}
+
+label {
+    margin-bottom: 5px; /* Jarak antara label dan input */
+    font-weight: bold; /* Mencetak label tebal */
+}
+
+input[type="text"],
+textarea {
+    padding: 10px; /* Padding dalam input dan textarea */
+    border: 1px solid #ccc; /* Warna border */
+    border-radius: 5px; /* Sudut melengkung */
+    font-size: 16px; /* Ukuran font */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #666; /* Warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+.submit-button {
+    padding: 10px; /* Padding dalam tombol */
+    background-color: hsl(221, 100%, 59%); /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Menunjukkan pointer saat hover */
+    font-size: 16px; /* Ukuran font */
+    transition: background-color 0.3s; /* Transisi saat hover */
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Warna saat hover */
+}
+
+.recipe-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.recipe-list th, .recipe-list td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.recipe-list img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-list th, .recipe-list td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+
+
+.btn {
+    background-color: #000000; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline display */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #474747; /* Darker green on hover */
+}
+
+.btn:active {
+    background-color: #000000; /* Even darker on click */
+    transform: translateY(2px); /* Slightly lower on click */
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+select option {
+    padding: 10px;
+    background-color: #fff;
+}
+
